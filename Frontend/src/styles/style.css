@@ -48,9 +48,12 @@ body {
     font-size: 20px;
 }
 
-.app-bar  .app-bar__menu {
- display: none;
+.app-bar .app-bar__nav a{
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
 }
+
 
 .app-bar .app-bar__login button{
     padding: 8px 25px;
@@ -61,13 +64,39 @@ body {
     color: #81B214;
 }
 
+.nav__list{
+    display: flex;
+    gap: 6em;
+    font-size: 20px;
+    list-style-type:none;
+    justify-content: flex-end;
+  }
+  
+
 .app-bar .app-bar__login button:hover{
     background-color: #F58634;
     color: #FFFFFF;
 }
 
+
+
+/* Hamburger menu */
+.app-bar__menu button{
+    display: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: #81B214;
+    color: white;
+    border: none;
+    font-size: 25px;
+    min-height: 44px;
+    min-width: 44px;
+    
+  }
+
+  
 main {
-    padding: 32px;
+    
     flex: 1;
   }
    
@@ -79,8 +108,79 @@ main {
   .content .content__heading {
     font-weight: normal;
   }
-   
-  
+
+/* Jumbotron */
+.jumbotron {
+    position: relative;
+    height: 500px;
+    background-color:#81B214 ;
+    overflow: hidden;
+  }
+  .jumbotron img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+   .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+  }
+  .jumbotron .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .jumbotron h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  .jumbotron p {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .jumbotron .jumbotron-button button {
+    margin-top: 20px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #F58634;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    }
+
+  .jumbotron .jumbotron-button button:hover {
+    background-color: #81B214;
+    color: #fff;
+    }
+
+/* Product List */
+
+.section-listProducts {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+
+
 
 /*
   Footer
@@ -90,5 +190,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
- 
+    background-color: #81B214;
+    color: #fff;
+    padding: 15px 0;
 }
