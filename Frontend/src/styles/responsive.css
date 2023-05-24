@@ -41,4 +41,8 @@
     #drawer.active {
       display: block;
     }
+
+    .product{
+      grid-template-columns: repeat(2,auto);
+    }
   }
