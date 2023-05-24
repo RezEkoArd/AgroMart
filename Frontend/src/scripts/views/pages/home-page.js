@@ -1,3 +1,5 @@
+import { createProductCardTemplate } from "../components/product-card";
+
 const HomePage = {
     async render() {
         return `
@@ -17,12 +19,14 @@ const HomePage = {
 
             <section class="section-listProducts">
                 <h1>All Product</h1>
+                <div id="product" class="product"></div>
             </section>
         `;
     },
 
     async afterRender(){
-
+        const productContainer = document.querySelector('#product');
+        productContainer.innerHTML = createProductCardTemplate();
     },
 }
 
