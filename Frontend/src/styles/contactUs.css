@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.about_argoMart_container{
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px 0 10px 40px;
+    margin-bottom: 50px;
+    background-color: #F58634;
+    margin-bottom: 70px;
+    margin-top: 40px;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.about_argoMart{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.about_argoMart p{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    font-size: 15pt;
+    text-align: justify;
+}
+
+.about_argoMart img{
+    float:right;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.about_argoMart_picture{
+    max-width: 500px;
+}
+
+/* ABOUT US */
+.section-title{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 10px;
+}
+
+.container{
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* BUTTON */
+.btn-primary{
+    background-color:#F58634;
+    border-color: white;
+}
+
+.btn-primary:hover{
+    background-color: white;
+    color: #F58634;
+    border-color: #F58634;
+}
+
+.btn-primary:active{
+    background-color: white !important;
+    color: #F58634 !important;
+}
+
+.bi-discord:hover{
+    color: #F58634 !important;
+}
+
+.bi-github:hover{
+    color: #F58634 !important;
+}
+
+.bi-linkedin:hover{
+    color: #F58634 !important;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 600px) {
+    .card-responsive{
+        padding-left: 70px;
+        width: 150%;
+    }
+    .about_argoMart{
+        max-width: 100%;
+    }
+    .about_argoMart_picture{
+        max-width: 90%;
+    }
+}
+
