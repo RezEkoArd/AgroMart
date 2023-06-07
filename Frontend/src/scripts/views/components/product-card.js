@@ -6,7 +6,7 @@ const createProductCardTemplate = () =>`
         </div>
     </div>
     <div class="product-item_content">
-        <h3><a href="#">Barang 1</a></h3>
+        <h3><a href="#/detail">Barang 1</a></h3>
         <p>placeholder</p>
         <p>IDR Placeholder</p>
     </div>
@@ -18,7 +18,7 @@ const createProductCardTemplate = () =>`
         </div>
     </div>
     <div class="product-item_content">
-        <h3><a href="#">Barang 1</a></h3>
+        <h3><a href="#/detail">Barang 1</a></h3>
         <p>placeholder</p>
         <p>IDR Placeholder</p>
     </div>
@@ -30,7 +30,7 @@ const createProductCardTemplate = () =>`
         </div>
     </div>
     <div class="product-item_content">
-        <h3><a href="#">Barang 1</a></h3>
+        <h3><a href="#/detail">Barang 1</a></h3>
         <p>placeholder</p>
         <p>IDR Placeholder</p>
     </div>
@@ -42,7 +42,7 @@ const createProductCardTemplate = () =>`
         </div>
     </div>
     <div class="product-item_content">
-        <h3><a href="#">Barang 1</a></h3>
+        <h3><a href="#/detail">Barang 1</a></h3>
         <p>placeholder</p>
         <p>IDR Placeholder</p>
     </div>
@@ -54,7 +54,7 @@ const createProductCardTemplate = () =>`
         </div>
     </div>
     <div class="product-item_content">
-        <h3><a href="#">Barang 1</a></h3>
+        <h3><a href="#/detail">Barang 1</a></h3>
         <p>placeholder</p>
         <p>IDR Placeholder</p>
     </div>
@@ -66,7 +66,7 @@ const createProductCardTemplate = () =>`
         </div>
     </div>
     <div class="product-item_content">
-        <h3><a href="#">Barang 1</a></h3>
+        <h3><a href="#/detail">Barang 1</a></h3>
         <p>placeholder</p>
         <p>IDR Placeholder</p>
     </div>
