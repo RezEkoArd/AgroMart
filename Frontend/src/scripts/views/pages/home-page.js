@@ -20,7 +20,11 @@ const HomePage = {
             <section class="section-listProducts">
                 <h1>All Product</h1>
                 <div id="product" class="product"></div>
+                <div class="button-showMore">
+                <a href="#/groceries-page" class="btn btn-primary">Show More...</a>
+                </div>
             </section>
+            
         `;
     },
 

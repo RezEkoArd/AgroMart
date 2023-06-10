@@ -3,6 +3,7 @@ import '../styles/style.css';
 import '../styles/responsive.css'; 
 import '../styles/contact-us.css';
 import App from './views/app';
+import '../styles/groceries-page.css';
 
 const app = new App({
     button: document.querySelector('.app-bar__menu'),
