@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.border{
+    border-color:#D9D9D9!important;
+}
+/* Hero-area */
+.search-container{
+    padding: 50px;
+}
+.h-search-form{
+    width: 100%;
+    position: relative;
+}
+.h-search-form input{
+    width: 70%;
+    padding:0 30px;
+    border-radius: 50px;
+    font-size: 16px;
+    text-transform: capitalize;
+    position: relative;
+    color: black;
+    height: 50px;
+}
+.h-search-form input:hover{
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.8);
+    padding: 10px 20px;
+    border: 1px grey;
+    transition: all 1s;
+}
+
+.h-search-form button{
+    position: absolute;
+    right: 135px;
+    height: 40px;
+    top: 5px;
+    border: none;
+    color: #D9D9D9;
+    background: #F58634;
+    border-radius: 50px;
+    width: 100px;
+}
+.h-search-form button:hover{
+    color: white;
+}
+
+/* Body */
+.card{
+    width: 100%;
+}
+/* .card img{
+    width: 12rem;
+} */
+.card a:hover{
+    color: #F58634;
+}
+
+
+.sayuran-container{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.sayuran-card{
+    display: flex;
+    box-sizing: border-box;
+}
+
+.buah-container{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.tanaman-container{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+@media only screen and (max-width: 600px){}
