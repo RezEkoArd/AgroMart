@@ -229,11 +229,104 @@ main {
   -webkit-line-clamp: 4; /* number of lines to show */
   -webkit-box-orient: vertical;
 }
-/* BUTTON */
-.button-showMore{
-  margin-left: 45%;
-  margin-bottom: 40px;
+
+
+/* product detail section */
+
+  .product-detail{
+    margin: 80px 90px;
+  }
+
+/* navigation */
+.navigation {
+    height: 60px;
 }
+
+.container-detail{
+  display: flex;
+  gap: 20px;
+}
+
+.product-image{
+  height: 350px;
+  width: 28%;
+  background-color: #81B214;
+  margin : auto 0;
+}
+
+.img{
+  display: flex;
+  height: 310px;
+  background-color: darkgray;
+  margin: 20px 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.product-attribute{
+    margin: 15px;
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.price, .quantity, .rating{
+  display: flex;
+  gap: 40px;
+}
+
+/* add and minus button */
+.add, .min{
+  width:50px;
+}
+.add, .min:hover{
+  cursor: pointer;
+}
+
+.qty{
+  width:50px;
+  text-align: center;
+}
+
+
+/* profile-drawer */
+    .profile-drawer{
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      gap: 10px;
+      position: absolute;
+      top: 76px;
+      right: 10px;
+      
+    }
+
+    .btn{
+      text-align: left;
+    }
+
+    .btn-secondary{
+      color:black;
+      background-color: #D9D9D9;
+    }
+
+    button img{
+      position: absolute;
+      right: 20px;
+      width: 20%;
+    }
+
+    .basket-count{
+      position: absolute;
+      right: 20px;
+      top:-3px;
+      color:red;
+    }
+
 /*
   Footer
 */

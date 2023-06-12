@@ -46,12 +46,12 @@ const ContactPage = {
                 <div class="card text-center shadow bg-body-tertiary rounded mb-4" style="width: 15rem;">
                 <img src="./images/team/giyu-bg.png" class="card-img-top" alt="Profile picture">
                 <div class="card-body">
-                    <h5 class="card-title">Diisi nama ygy</h5>
+                    <h5 class="card-title">Muhamad Faisal Fiqri</h5>
                     <p class="card-text fw-lighter">Front-End | Developer</p>
                     <p class="card-text"><a href="#" class="btn btn-primary">CONNECT</a></p>
-                    <p class="card-text"><a href="#"><i class="bi bi-github" style="font-size: 20px;color:black;"></i></a>
-                    <a href="#"><i class="bi bi-discord" style="font-size: 20px;color:black;"></i></a>
-                    <a href="#"><i class="bi bi-linkedin" style="font-size: 20px;color:black;"></i></a></p>
+                    <p class="card-text"><a href="https://github.com/faisal-fiqri"><i class="bi bi-github" style="font-size: 20px;color:black;"></i></a>
+                    <a href="discordapp.com/users/Fyqre#3526"><i class="bi bi-discord" style="font-size: 20px;color:black;"></i></a>
+                    <a href="https://www.linkedin.com/in/muhamad-faisal-fiqri-520731209/"><i class="bi bi-linkedin" style="font-size: 20px;color:black;"></i></a></p>
                 </div>
                 </div>
             </div>
