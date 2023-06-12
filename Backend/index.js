@@ -1,16 +1,27 @@
 const express = require('express')
+const mongoose = require('mongoose')
+const dotenv = require('dotenv')
+
+const authRoute = require('./routes/auth')
+const productRoute = require('./routes/product')
+const cartRoute = require('./routes/keranjang')
+
+dotenv.config()
+
+// connect mongo
+mongoose.
+    connect(process.env.MONGO_URL)
+    .then(() => {
+        console.log('db connection is Successfully')
+    })
+
 const app = express()
-const port = 3000
+app.use(express.json())
+app.use('/auth',authRoute)
+app.use('/product',productRoute)
+app.use('/cart',cartRoute)
 
-const bodyParser = require('body-parser')
-const cors = require('cors')
 
-app.use(cors());
-
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+app.listen(process.env.PORT || 5000, () => {
+    console.log("Backend Server is running")
 })
