@@ -1,4 +1,4 @@
-import { createProductDetailTemplate } from "../templates/template-creator";
+import { createProductDetailTemplate } from "../components/detail";
 
 
 const ProductDetailPage = {

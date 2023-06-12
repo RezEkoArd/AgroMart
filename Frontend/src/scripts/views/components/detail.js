@@ -1,19 +1,3 @@
-const createProductCardTemplate = () =>`
-<div class="product-item">
-    <div class="product-item-header">
-        <div class="placeholder-img">
-            <div></div>
-        </div>
-    </div>
-    <div class="product-item_content">
-        <h3><a href="#">Barang 1</a></h3>
-        <p>placeholder</p>
-        <p>IDR Placeholder</p>
-    </div>
-</div>
-`;
-
-
 const createProductDetailTemplate = () =>`
     <div class ="profile-drawer">
 
@@ -42,9 +26,4 @@ const createProductDetailTemplate = () =>`
     </div>
 `
 
-const createCartButtonTemplate = () => `
-`
-
-
-export { createProductCardTemplate , createProductDetailTemplate};
-
+export { createProductDetailTemplate};

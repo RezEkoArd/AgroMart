@@ -81,3 +81,29 @@
       display: none;
     }
   }
+
+  @media only screen and (max-width: 1203px){
+    .container-detail{
+      flex-direction: column;
+    }
+
+    .product-image{
+      width: 333px;
+      margin: auto;
+    }
+
+    .product-attribute h4{
+      font-size: 16px;
+    }
+    .rating{
+      flex-direction: column;
+    }
+
+    .product-attribute{
+      width: 100%;
+      gap: 10px;
+    }
+    .rating button{
+      margin: auto;
+    }
+  }
