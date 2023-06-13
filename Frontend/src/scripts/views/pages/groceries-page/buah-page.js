@@ -1,4 +1,5 @@
 import { createGroceriesProductTemplate } from "../../components/groceries-product";
+import AgroMartDbSource from "../../../../data/agromartdb-source";
 const buahPage = {
     async render() {
       return `
@@ -13,8 +14,14 @@ const buahPage = {
     },
    
     async afterRender() {
+      const products = await AgroMartDbSource.cardProduct();
+      const kategoriBuah = products.filter(products=>products.categories === "Buah");
+      // console.log(kategoriBuah);
       const buahPageContainer = document.querySelector('.buah-page-card');
-        buahPageContainer.innerHTML = createGroceriesProductTemplate();
+      kategoriBuah.forEach((kategoriBuah)=> { 
+        buahPageContainer.innerHTML += createGroceriesProductTemplate(kategoriBuah);
+     });
+        
     },
   };
    
