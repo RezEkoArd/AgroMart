@@ -87,4 +87,10 @@ a{
     text-decoration: none;
     color: black;
 }
+
+/* .card-body img{
+    width:20%;
+    height: 20%;
+} */
+
 @media only screen and (max-width: 600px){}
