@@ -20,7 +20,7 @@ const GroceriesPage = {
     </section>
     <div class="sayuran-container">
         <div class="sayuran-header">
-            <h3><a href="#/sayur-page">Sayuran</a></h3>
+            <h3><a href="#/sayuran-page">Sayuran</a></h3>
             <hr class="border border-primary border-3 opacity-75">
         </div>
         <div class="row sayuran-card"></div>

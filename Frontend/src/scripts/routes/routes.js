@@ -15,7 +15,7 @@ const routes = {
     // '/product-list': ProductListPage,     
 
     '/groceries-page': GroceriesPage,
-    '/sayur-page': sayurPage,
+    '/sayuran-page': sayurPage,
     '/buah-page': buahPage,
     '/tanaman-page': tanamanPage
     // '/detail/:id': Detail,

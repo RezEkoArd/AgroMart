@@ -5,7 +5,7 @@ const createProductDetailTemplate = (product) =>`
     <button type="button" class="btn btn-secondary btn-lg">Setting <img src="./images/setting.png" alt=""> </img></button>
     </div>
     <div class="navigation">
-        <p><a href="#">${product.categories}</a> / <a href="#/detail/${product.id}">${product.title} </a> </p>
+        <p><a href="#/${product.categories}-page">${product.categories}</a> / <a href="#/detail/${product.id}">${product.title} </a> </p>
     </div>
     <div class="container-detail">
         <div class="product-image"> 
