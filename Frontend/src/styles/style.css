@@ -209,6 +209,14 @@ main {
   background-color: #81B214;
 }
 
+.placeholder-img, .product-image{
+  overflow: hidden;
+}
+
+.product-item-header img , .product-image img{
+  width: 100%;
+  height: 100%;
+}
 .product-item .product-item_content {
   padding: 16px;
 }

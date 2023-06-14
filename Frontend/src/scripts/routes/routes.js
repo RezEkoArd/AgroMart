@@ -12,8 +12,7 @@ const routes = {
     '/': HomePage, // default page
     '/contact-us': ContactPage,
     '/login-page': LoginPage,
-    // '/detail/:id': Detail,    karena belum ada parameter id jadinya pakai yang bawah dulu
-    '/detail': Detail,
+    '/detail/:id': Detail,  
     // '/product-list': ProductListPage,     
 
     '/groceries-page': GroceriesPage,
