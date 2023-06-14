@@ -1,4 +1,5 @@
-import { createGroceriesProductTemplate } from "../../components/groceries-product";
+import { createProductSayurTemplate } from "../../components/groceries-product";
+import AgroMartDbSource from "../../../../data/agromartdb-source";
 
 const sayurPage = {
     async render() {
@@ -8,14 +9,22 @@ const sayurPage = {
       <h3>Sayuran</h3>
       <hr class="border border-primary border-3 opacity-75">
     </div>
-        <div class="sayur-page-card"></div>
+        <div class="container">
+          <div class="row sayur-page-card"> </div>
+        </div>
+        </div>
     </div>
       `;
     },
    
     async afterRender() {
+      const products = await AgroMartDbSource.cardProduct();
+      const kategoriSayur = products.filter(products=>products.categories === "Sayuran")
+      console.log(kategoriSayur);
         const sayurPageContainer = document.querySelector('.sayur-page-card');
-        sayurPageContainer.innerHTML = createGroceriesProductTemplate();
+        kategoriSayur.forEach((kategoriSayur)=> { 
+        sayurPageContainer.innerHTML += createProductSayurTemplate(kategoriSayur);
+        });
     },
   };
    

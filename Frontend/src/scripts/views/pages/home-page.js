@@ -1,3 +1,4 @@
+import AgroMartDbSource from "../../../data/agromartdb-source";
 import { createProductCardTemplate } from "../components/product-card";
 
 const HomePage = {
@@ -29,9 +30,13 @@ const HomePage = {
     },
 
     async afterRender(){
+        const products = await AgroMartDbSource.cardProduct();
         const productContainer = document.querySelector('#product');
-        productContainer.innerHTML = createProductCardTemplate();
+        console.log(products)
+        products.forEach((product)=> { 
+            productContainer.innerHTML += createProductCardTemplate(product);
+         });
     },
-}
+};
 
 export default HomePage;

@@ -1,4 +1,5 @@
-import { createProductListTemplate } from "../components/product-list";
+import { createProductListTemplate, createBuahListTemplate } from "../components/product-list";
+import AgroMartDbSource from "../../../data/agromartdb-source";
 
 const GroceriesPage = {
     async render() {
@@ -19,18 +20,20 @@ const GroceriesPage = {
     </section>
     <div class="sayuran-container">
         <div class="sayuran-header">
-            <h3><a href="#/sayur-page">Sayuran</a></h3>
+            <h3><a href="#/sayuran-page">Sayuran</a></h3>
             <hr class="border border-primary border-3 opacity-75">
         </div>
-        <div class="sayuran-card"></div>
-    </div>
+        <div class="row sayuran-card"></div>
+        </div>
+
     <div class="buah-container">
         <div class="buah-header">
             <h3><a href="#/buah-page">Buah - Buahan</a></h3>
             <hr class="border border-primary border-3 opacity-75">
         </div>
-        <div class="buah-card"></div>
-    </div>
+        <div class="row buah-card"></div>
+        </div>
+
     <div class="tanaman-container">
     <div class="tanaman-header">
         <h3><a href="#/tanaman-page">Benih Tanaman</a></h3>
@@ -42,14 +45,23 @@ const GroceriesPage = {
     },
 
     async afterRender(){
+    const products = await AgroMartDbSource.cardProduct();
+    const sayur = products.filter(products=>products.categories === "Sayuran")
+    console.log(sayur);
     const sayuranContainer = document.querySelector('.sayuran-card');
-    sayuranContainer.innerHTML = createProductListTemplate();
+    sayur.forEach((sayur)=> { 
+    sayuranContainer.innerHTML += createProductListTemplate(sayur);
+    });
 
+    const buah = products.filter(products=>products.categories === "Buah")
+    console.log(buah);
     const buahContainer = document.querySelector('.buah-card');
-    buahContainer.innerHTML = createProductListTemplate();
+    buah.forEach((buah)=> { 
+    buahContainer.innerHTML += createBuahListTemplate(buah);
+    });
 
-    const tanamanContainer = document.querySelector('.tanaman-card');
-    tanamanContainer.innerHTML = createProductListTemplate();
+    // const tanamanContainer = document.querySelector('.tanaman-card');
+    // tanamanContainer.innerHTML = createProductListTemplate();
     },
 }
 

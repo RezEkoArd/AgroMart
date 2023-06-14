@@ -3,9 +3,10 @@ body{
     min-height: 100vh;
     vertical-align: middle;
     display: flex;
-    font-family: sans-serif;
+}
+
+.cart{
     font-size: 0.8rem;
-    font-weight: bold;
 }
 .title{
     margin-bottom: 5vh;
@@ -76,25 +77,11 @@ a{
 img{
     width: 3.5rem;
 }
-.back-to-shop{
-    margin-top: 4.5rem;
-}
 h5{
     margin-top: 4vh;
 }
 hr{
     margin-top: 1.25rem;
-}
-form{
-    padding: 2vh 0;
-}
-select{
-    border: 1px solid rgba(0, 0, 0, 0.137);
-    padding: 1.5vh 1vh;
-    margin-bottom: 4vh;
-    outline: none;
-    width: 100%;
-    background-color: rgb(247, 247, 247);
 }
 input{
     border: 1px solid rgba(0, 0, 0, 0.137);
@@ -108,7 +95,7 @@ input:focus::-webkit-input-placeholder
 {
       color:transparent;
 }
-.btn{
+.summary .btn{
     background-color: #000;
     border-color: #000;
     color: white;
@@ -118,7 +105,7 @@ input:focus::-webkit-input-placeholder
     padding: 1vh;
     border-radius: 0;
 }
-.btn:focus{
+.summary .btn:focus{
     box-shadow: none;
     outline: none;
     box-shadow: none;
@@ -126,7 +113,7 @@ input:focus::-webkit-input-placeholder
     -webkit-box-shadow: none;
     transition: none; 
 }
-.btn:hover{
+.summary .btn:hover{
     color: white;
 }
 a{
@@ -135,10 +122,4 @@ a{
 a:hover{
     color: black;
     text-decoration: none;
-}
- #code{
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.253) , rgba(255, 255, 255, 0.185)), url("https://img.icons8.com/small/16/000000/long-arrow-right.png");
-    background-repeat: no-repeat;
-    background-position-x: 95%;
-    background-position-y: center;
 }
