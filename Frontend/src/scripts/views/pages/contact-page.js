@@ -25,10 +25,10 @@ const ContactPage = {
         </div>
 
         <div class="container">
-          <div class="row ms-5">
-
+          <div class="row ms-4">
+          
             <!-- Team 1 -->
-            <div class="col card-responsive" >
+            <div class="col card-responsive">
               <div class="card text-center shadow bg-body-tertiary rounded mb-4 " style="width: 15rem;">
                 <img src="./images/team/giyu-bg.png" class="card-img-top" alt="Profile picture">
                 <div class="card-body">
@@ -83,6 +83,7 @@ const ContactPage = {
                   </div>
                 </div>
               </div>
+            </div>
             </div>
       </div>
 </main>
