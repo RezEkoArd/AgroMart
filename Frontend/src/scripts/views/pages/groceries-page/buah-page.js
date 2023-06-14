@@ -8,7 +8,7 @@ const buahPage = {
           <h3>Buah - Buahan</h3>
           <hr class="border border-primary border-3 opacity-75">
       </div>
-      <div class="buah-page-card"></div>
+      <div class="row buah-page-card"></div>
   </div>
       `;
     },

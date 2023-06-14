@@ -10,8 +10,7 @@ const sayurPage = {
       <hr class="border border-primary border-3 opacity-75">
     </div>
         <div class="container">
-        <div class="row"> 
-          <div class="sayur-page-card"> </div>
+          <div class="row sayur-page-card"> </div>
         </div>
         </div>
     </div>

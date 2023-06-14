@@ -23,19 +23,17 @@ const GroceriesPage = {
             <h3><a href="#/sayur-page">Sayuran</a></h3>
             <hr class="border border-primary border-3 opacity-75">
         </div>
-        <div class="row">
-        <div class="sayuran-card"></div>
+        <div class="row sayuran-card"></div>
         </div>
-    </div>
+
     <div class="buah-container">
         <div class="buah-header">
             <h3><a href="#/buah-page">Buah - Buahan</a></h3>
             <hr class="border border-primary border-3 opacity-75">
         </div>
-        <div class="row">
-        <div class="buah-card"></div>
+        <div class="row buah-card"></div>
         </div>
-    </div>
+
     <div class="tanaman-container">
     <div class="tanaman-header">
         <h3><a href="#/tanaman-page">Benih Tanaman</a></h3>

@@ -335,6 +335,11 @@ main {
       color:red;
     }
 
+    .button-showMore{
+      margin-left: 45%;
+      margin-bottom: 40px;
+    }
+
 /*
   Footer
 */

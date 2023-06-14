@@ -1,5 +1,6 @@
 const createProductListTemplate = (sayur) => `
-<div class="col-md">
+<div class="col-md-4">
+<div class="card-group">
     <div class="card border-0 shadow p-3 mb-5 bg-body-tertiary rounded">
         <div class="card-body">
             <img src="${sayur.img}" alt="${sayur.title}" class="card-img-top">
@@ -9,10 +10,11 @@ const createProductListTemplate = (sayur) => `
         </div>
     </div>
 </div>
+</div>
 
 `;
 const createBuahListTemplate = (buah) => `
-<div class="col-md">
+<div class="col-md-4">
     <div class="card border-0 shadow p-3 mb-5 bg-body-tertiary rounded">
         <div class="card-body">
             <img src="${buah.img}" alt="${buah.title}" class="card-img-top">
