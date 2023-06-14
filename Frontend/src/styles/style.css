@@ -335,6 +335,21 @@ main {
       color:red;
     }
 
+/* halaman keranjang section */
+
+.cart-page{
+  margin : 30px 20px;
+}
+
+.cart-container{
+  width: 100%;
+}
+
+.head-item, .data-item{
+  width:80%;
+}
+
+
     .button-showMore{
       margin-left: 45%;
       margin-bottom: 40px;

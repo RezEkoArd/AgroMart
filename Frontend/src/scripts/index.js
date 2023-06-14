@@ -2,6 +2,7 @@ import 'regenerator-runtime';
 import '../styles/style.css';
 import '../styles/responsive.css'; 
 import '../styles/contact-us.css';
+import '../styles/keranjang-page.css'
 import App from './views/app';
 import '../styles/groceries-page.css';
 

@@ -1,7 +1,7 @@
 const createProductDetailTemplate = (product) =>`
     <div class ="profile-drawer">
 
-    <button type="button" class="btn btn-secondary btn-lg">Keranjang <img src="./images/basket.png" alt="" > </img><span class="basket-count">2</span></button>
+    <a type="button" class="btn btn-secondary btn-lg" href="#/keranjang">Keranjang <img src="./images/basket.png" alt="" > </img><span class="basket-count">2</span></a>
     <button type="button" class="btn btn-secondary btn-lg">Setting <img src="./images/setting.png" alt=""> </img></button>
     </div>
     <div class="navigation">
