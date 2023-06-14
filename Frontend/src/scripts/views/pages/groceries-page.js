@@ -9,8 +9,8 @@ const GroceriesPage = {
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 text-center">
                     <div class="h-search-form">
-                        <form action="#">
-                            <input type="search" name="search" placeholder="Cari Produk....">
+                        <form action="#/groceries-page" id="search-form">
+                            <input type="search" name="search" placeholder="Cari Produk...." id="search-input">
                             <button><i class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
                     </div>
@@ -44,25 +44,53 @@ const GroceriesPage = {
         `;
     },
 
-    async afterRender(){
-    const products = await AgroMartDbSource.cardProduct();
-    const sayur = products.filter(products=>products.categories === "Sayuran")
-    console.log(sayur);
-    const sayuranContainer = document.querySelector('.sayuran-card');
-    sayur.forEach((sayur)=> { 
-    sayuranContainer.innerHTML += createProductListTemplate(sayur);
-    });
-
-    const buah = products.filter(products=>products.categories === "Buah")
-    console.log(buah);
-    const buahContainer = document.querySelector('.buah-card');
-    buah.forEach((buah)=> { 
-    buahContainer.innerHTML += createBuahListTemplate(buah);
-    });
-
-    // const tanamanContainer = document.querySelector('.tanaman-card');
-    // tanamanContainer.innerHTML = createProductListTemplate();
-    },
-}
-
-export default GroceriesPage;
+    async afterRender() {
+        const products = await AgroMartDbSource.cardProduct();
+        const sayuranContainer = document.querySelector('.sayuran-card');
+        const buahContainer = document.querySelector('.buah-card');
+    
+        // Tampilkan semua produk awal pada halaman
+        showAllProducts(products, sayuranContainer, buahContainer);
+    
+        const searchForm = document.getElementById('search-form');
+        searchForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const searchInput = document.getElementById('search-input').value;
+          const filteredProducts = searchProducts(products, searchInput);
+    
+          // Hapus produk yang ditampilkan sebelumnya
+          clearProductContainer(sayuranContainer);
+          clearProductContainer(buahContainer);
+    
+          // Tampilkan produk yang sesuai dengan kata kunci pencarian
+          showAllProducts(filteredProducts, sayuranContainer, buahContainer);
+        });
+      },
+    };
+    
+    // Fungsi untuk menampilkan semua produk
+    function showAllProducts(products, sayuranContainer, buahContainer) {
+      const sayur = products.filter(product => product.categories === "Sayuran");
+      sayur.forEach((sayur) => {
+        sayuranContainer.innerHTML += createProductListTemplate(sayur);
+      });
+    
+      const buah = products.filter(product => product.categories === "Buah");
+      buah.forEach((buah) => {
+        buahContainer.innerHTML += createBuahListTemplate(buah);
+      });
+    }
+    
+    // Fungsi untuk mencari produk berdasarkan kata kunci
+    function searchProducts(products, keyword) {
+      return products.filter(product =>
+        product.title.toLowerCase().includes(keyword.toLowerCase())
+      );
+    }
+    
+    // Fungsi untuk menghapus produk yang ditampilkan sebelumnya
+    function clearProductContainer(container) {
+      container.innerHTML = '';
+    }
+    
+    export default GroceriesPage;
