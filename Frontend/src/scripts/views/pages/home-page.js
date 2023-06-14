@@ -33,7 +33,7 @@ const HomePage = {
         const products = await AgroMartDbSource.cardProduct();
         const productContainer = document.querySelector('#product');
         console.log(products)
-        products.forEach((product)=> { 
+        products.slice(0,6).forEach((product)=> { 
             productContainer.innerHTML += createProductCardTemplate(product);
          });
     },
