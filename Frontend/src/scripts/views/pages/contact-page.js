@@ -44,7 +44,7 @@ const ContactPage = {
             <!-- Team 2 -->
             <div class="col card-responsive">
                 <div class="card text-center shadow bg-body-tertiary rounded mb-4" style="width: 15rem;">
-                <img src="./images/team/giyu-bg.png" class="card-img-top" alt="Profile picture">
+                <img src="./images/team/faisal.jpeg" class="card-img-top" alt="Profile picture">
                 <div class="card-body">
                     <h5 class="card-title">Muhamad Faisal Fiqri</h5>
                     <p class="card-text fw-lighter">Front-End | Developer</p>

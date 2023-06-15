@@ -7,7 +7,8 @@ import buahPage from "../views/pages/groceries-page/buah-page";
 import tanamanPage from "../views/pages/groceries-page/tanaman-page";
 import Detail from "../views/pages/product-detail-page";
 import Keranjang from "../views/pages/keranjang-page";
-
+import LoginPembeli from "../views/pages/login-pembeli";
+import LoginPenjual from "../views/pages/login-penjual";
 const routes = {
     '/': HomePage, // default page
     '/contact-us': ContactPage,
@@ -20,7 +21,9 @@ const routes = {
     '/buah-page': buahPage,
     '/tanaman-page': tanamanPage,
     // '/detail/:id': Detail,
-    '/keranjang' : Keranjang
+    '/keranjang' : Keranjang,
+    '/login-pembeli' : LoginPembeli,
+    '/login-penjual' : LoginPenjual
   };
    
   export default routes;
