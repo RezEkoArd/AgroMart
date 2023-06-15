@@ -11,8 +11,11 @@ const HomePage = {
                     <h1>Selamat Datang Di AgroMart</h1>
                     <p>E-commerce agriculture yang menjual Sayuran fresh berasal langsung dari Petani Indonesia.</p>
                 <div class="jumbotron-button">
-                    <button >
+                    <a href="#/login-pembeli" class="button">
                     Order now
+                    </a>
+                    <a href="#/login-penjual" class="button">
+                    Sell now
                     </button>
                 </div>
                 </div>

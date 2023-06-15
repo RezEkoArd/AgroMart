@@ -157,7 +157,11 @@ main {
     margin-bottom: 0;
   }
 
-  .jumbotron .jumbotron-button button {
+  .jumbotron-button{
+    display: flex;
+    justify-content: space-around;
+  }
+  .jumbotron .jumbotron-button a.button {
     margin-top: 20px;
     padding: 15px 20px;
     border: none;
@@ -290,6 +294,7 @@ main {
 /* add and minus button */
 .add, .min{
   width:50px;
+  height: 38px;
 }
 .add, .min:hover{
   cursor: pointer;
@@ -354,6 +359,52 @@ main {
       margin-left: 45%;
       margin-bottom: 40px;
     }
+
+
+    /* login */
+    .container-login {
+      color: #FFFFFF;
+      max-width: 400px;
+      margin: 30px auto;
+      padding: 40px;
+      background-color: #81B214;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    #password , #username {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .login {
+      margin: 0 auto;
+      display: block;
+      width: 70%;
+      padding: 10px;
+      background-color: #F58634 ;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
 
 /*
   Footer
