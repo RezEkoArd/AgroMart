@@ -1,4 +1,5 @@
 import  { createKeranjangTemplate }  from "../components/keranjang-template";
+import AgroMartDbSource from "../../../data/agromartdb-source";
 
 const KeranjangPage = {
     async render() {
@@ -43,6 +44,7 @@ const KeranjangPage = {
     },
    
     async afterRender() {
+
       const keranjangContainer = document.querySelector('#cart-content');
       keranjangContainer.innerHTML = createKeranjangTemplate();
     },
