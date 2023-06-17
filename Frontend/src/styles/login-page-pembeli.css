@@ -1,0 +1,38 @@
+.login_page_container{
+    margin: 50px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background-color:#81B214;
+    border-radius: 5%;
+    color: #fff;
+  }
+
+
+.login_page_title h1{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.login_page_form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;  
+    border-radius: 5%;
+}
+
+.login_page_form .login_page_button{
+    border: none;
+    width: 100%;
+    padding: 5px 0;
+}
+

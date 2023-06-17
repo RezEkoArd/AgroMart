@@ -67,6 +67,16 @@ h1{
     color: #81B214;
 }
 
+.app-bar .app-bar__logout button{
+    padding: 8px 25px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    box-shadow: none;
+    border: none;
+    color: #81B214;
+    display: none;
+}
+
 .nav__list{
     display: flex;
     gap: 6em;

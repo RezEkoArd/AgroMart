@@ -5,6 +5,7 @@ import '../styles/contact-us.css';
 import '../styles/keranjang-page.css'
 import App from './views/app';
 import '../styles/groceries-page.css';
+import '../styles/login-page-pembeli.css';
 
 const app = new App({
     button: document.querySelector('.app-bar__menu'),
