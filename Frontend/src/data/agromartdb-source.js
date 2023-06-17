@@ -56,11 +56,18 @@ class AgroMartDbSource {
         }
     }
 
-    // static async cartList(id) {
-    //     const response = await fetch(API_ENDPOINT.CART_LIST(id));
-    //     console.log(response);
-    //     return response.json();
-    // }
+    static async cartList(id) {
+        const response = await fetch(API_ENDPOINT.CART_LIST(id));
+        return response.json();
+    }
+    
+    static async totalPrice(id) {
+       const response =  await fetch(API_ENDPOINT.TOTAL_PRICE(id));
+       const responseJson = await response.json()
+       const data = responseJson[0]
+       return data
+    }
+
 }
 
 export default AgroMartDbSource;

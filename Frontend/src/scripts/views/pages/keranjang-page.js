@@ -1,4 +1,4 @@
-import  { createKeranjangTemplate }  from "../components/keranjang-template";
+import  { createKeranjangTemplate, createSummaryTemplate }  from "../components/keranjang-template";
 import AgroMartDbSource from "../../../data/agromartdb-source";
 
 const KeranjangPage = {
@@ -23,31 +23,46 @@ const KeranjangPage = {
             <div id=cart-content></div>
         </div> 
     </div>
-    <div class="col-md-4 summary">
-    <hr>
-    <div class="row">
-        <div class="col" style="padding-left:0;">Total</div>
-        <div class="col text-right">RP.HARGA</div>
-    </div>
-    <div class="row">
-        <div class="col" style="padding-left:0;">Ongkos Krim</div>
-        <div class="col text-right">Free</div>
-    </div>
-    <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
-        <div class="col">Total Harga</div>
-        <div class="col text-right">RP.HARGA</div>
-    </div>
-    <button class="btn text-center">CHECKOUT</button>
-    </div>
+    <div class="col-md-4 summary" id="summary-content">
+
     </div>
       `;
     },
    
     async afterRender() {
+      const userId = localStorage.getItem('userId');
+      if (!userId) {
+        window.location.href = "/#/login-pembeli";
+      } else {
+        const carts = await AgroMartDbSource.cartList(userId);
+        const keranjangContainer = document.querySelector('#cart-content');
+        carts.forEach((cart)=> { 
+          keranjangContainer.innerHTML += createKeranjangTemplate(cart);
+       });
+  
+      const total = await AgroMartDbSource.totalPrice(userId)
+      const summaryContainer = document.querySelector('#summary-content')
+      summaryContainer.innerHTML = createSummaryTemplate(total)
+      
+      const loginButton = document.querySelector('#loginButton');
+      loginButton.style.display='none';
 
-      const keranjangContainer = document.querySelector('#cart-content');
-      keranjangContainer.innerHTML = createKeranjangTemplate();
+      const logoutButton = document.querySelector('#logoutButton');
+      logoutButton.style.display='block';
+
+      const logout = () => {
+        localStorage.removeItem('userId');
+        localStorage.removeItem('username');
+
+        window.location.href = "/#/login-pembeli";
+        logoutButton.style.display='none';
+        loginButton.style.display='block';
+      }
+
+      logoutButton.addEventListener('click', logout)
+     }
     },
+
   };
    
   export default KeranjangPage;
