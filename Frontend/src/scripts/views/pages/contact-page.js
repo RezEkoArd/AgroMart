@@ -72,13 +72,13 @@ const ContactPage = {
             <!-- Team 4 -->
             <div class="col card-responsive">
                 <div class="card text-center shadow bg-body-tertiary rounded mb-4" style="width: 15rem;">
-                  <img src="./images/team/giyu-bg.png" class="card-img-top" alt="Profile picture">
+                  <img src="https://i.ibb.co/2nRzm6T/Ayuns.jpg" class="card-img-top" alt="Profile picture">
                   <div class="card-body">
                     <h5 class="card-title">Ayunita Putri</h5>
                     <p class="card-text fw-lighter">Front-End | Developer</p>
                     <p class="card-text"><a href="https://www.linkedin.com/in/ayunita-putri/" class="btn btn-primary">CONNECT</a></p>
                     <p class="card-text"><a href="https://github.com/Ayunitaputri"><i class="bi bi-github" style="font-size: 20px;color:black;"></i></a>
-                      <a href="#"><i class="bi bi-discord" style="font-size: 20px;color:black;"></i></a>
+                      <a href="discordapp.com/users/Ayums#0479"><i class="bi bi-discord" style="font-size: 20px;color:black;"></i></a>
                       <a href="https://www.linkedin.com/in/ayunita-putri/"><i class="bi bi-linkedin" style="font-size: 20px;color:black;"></i></a></p>
                   </div>
                 </div>
